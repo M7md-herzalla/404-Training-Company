@@ -1,0 +1,325 @@
+<html>
+
+<head>
+    <title>Training Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+
+<header class="main-header show">
+
+    <div class="header-logo">
+        Error 404
+    </div>
+
+    <nav class="header-navigation">
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="training.html">Training</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+<main>
+
+                <h1>Training Details</h1>
+    <section class="training-details">
+                <h1>Training Details</h1>
+
+              <p class="training-text">
+            We offer a variety of training programs designed to meet the needs
+            of individuals and organizations. Our programs are led by experienced
+            instructors and are tailored to provide practical skills and knowledge.
+        </p>
+        <p class="training-details-text">
+            Each training program is designed to be interactive and engaging, ensuring that participants can apply what they learn in real-world scenarios.
+        </p>
+
+    </section>
+
+    <section class="training-programs"> 
+
+
+
+    <div class="training-container">
+
+        <div class="training-card" onclick="showProgram('web')">
+            <h3>Web Development</h3>
+            <p>Learn how to build modern websites.</p>
+            <button class="enroll-btn" data-course="Web Development">
+    Enroll Now
+</button>
+
+        </div>
+   
+
+        <div class="training-card" onclick="showProgram('app')">
+            <h3>App Development</h3>
+            <p>Learn the basics of application development.</p>
+  <button class="enroll-btn" data-course="App Development">
+    Enroll Now
+</button>
+        </div>
+
+        <div class="training-card" onclick="showProgram('business')">
+            <h3>Business Management</h3>
+            <p>Develop practical management skills.</p>
+            <button class="enroll-btn" data-course="Business Management">
+    Enroll Now
+</button>
+        </div>
+
+        <div class="training-card" onclick="showProgram('leadership')">
+            <h3>Leadership Skills</h3>
+            <p>Build strong leadership abilities.</p>
+            <button class="enroll-btn" data-course="Leadership Skills">
+    Enroll Now
+</button>
+        </div>
+
+        <div class="training-card" onclick="showProgram('communication')">
+            <h3>Communication Skills</h3>
+            <p>Improve professional communication.</p>
+            <button class="enroll-btn" data-course="Communication Skills">
+    Enroll Now
+</button>
+        </div>
+
+        <div class="training-card" onclick="showProgram('it')">
+            <h3>IT Support</h3>
+            <p>Learn essential IT support skills.</p>
+            <button class="enroll-btn" data-course="IT Support">
+    Enroll Now
+</button>
+        </div>
+
+        
+    </div>
+
+
+<div class="price">
+    <div class="basic">
+        <h3>Basic</h3>
+        <h2>80$</h2>
+        <ul>
+            <li>Communication Skills</li>
+        </ul>
+        <ul>
+            <li>Web Development</li>
+        </ul>
+      <button class="choose">Choose Plan</button>
+    </div>
+       <div class="pro">
+        <h3>professional</h3>
+        <h2>150$</h2>
+        <ul>
+            <li>Web Development</li>
+        </ul>
+        <ul>
+            <li>Communication Skills</li>
+        </ul>
+        <ul>
+            <li>IT Support</li>
+        </ul>
+        <ul>
+            <li>App Development</li>
+        </ul>
+            <button class="choose">Choose Plsan</button>
+    </div>
+       <div class="pre">
+        <h3>Premium</h3>
+        <h2>200$</h2>
+        <ul>
+            <li>include all programs</li>
+        </ul>
+            <button class="choose">Choose Plan</button>
+        
+    </div>
+</div>
+</section>
+
+
+
+<section class="schedule">
+    <div class="tttt">
+    <h2>Training Table</h2>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>  course</th>
+                 
+                <th>  Day & Time </th>
+                
+                <th>     Duration   </th>  
+                     
+            </tr>
+        </thead>
+        <div>
+        <tbody>
+            <tr>
+               <td> Web Development</td>
+               <td> sunday on 7:00 PM</td>
+               <td>6 Weeks</td>
+            </tr>
+               <tr>
+               <td> App Development</td>
+               <td> monday on 5:00 PM</td>
+               <td>8 Weeks</td>
+            </tr>
+               <tr>
+               <td> Business Management</td>
+               <td> thursday on 3:00 PM</td>
+               <td>10 Weeks</td>
+            </tr>
+             </tr>
+               <tr>
+               <td> Leadership Skills</td>
+               <td> wensday on 9:00 PM</td>
+               <td>4 Weeks</td>
+            </tr>
+             </tr>
+               <tr>
+               <td> Communication Skills</td>
+               <td> friday on 8:00 PM</td>
+               <td>4 Weeks</td>
+            </tr>
+             </tr>
+               <tr>
+               <td> IT Support</td>
+               <td> tuesday on 10:00 AM</td>
+               <td>2 Weeks</td>
+            </tr>
+        </tbody>
+        </div>
+    </table>
+    
+<form id="registrationForm" class="registrationForm">
+    <fieldset>
+        <legend>Training Registrastion</legend>
+    
+        <label>Name :</label>
+        <input type="text" id="name" placeholder="Enter your name..." name="name">
+        <br><br>
+        <label>Email :</label>
+        <input type="email" id="email" placeholder="example@gmail.com" name="email">
+        <br><br>
+        <label>Password :</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <label>Age :</label>
+        <input type="number" id="age" name="age">
+        <br><br>
+        <label>Course :</label>
+      <input type="text" id="course" name="course" readonly>
+        <br><br>
+        <label>Experince :</label>
+        <input type="radio" id="Beginner" name="experience" value="Beginner">Beginner 
+         <label></label>
+        <input type="radio" id="Intermediate" name="experience" value="Intermediate">Intermediate 
+        <br><br>
+        <button type="submit" id="button" name="RegisterButton">Register</button>
+        <p id="formMsg"></p>
+    
+    
+    </fieldset>
+</form>
+</section>
+<section id="program-details" class="program-details"></section>
+</main>
+
+
+
+<script src="JS.js"></script>
+</body>
+
+
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <!-- Company -->
+        <div class="footer-section">
+
+            <h2>Error 404</h2>
+
+            <p>
+                Practical training for the modern world.
+                Learn new skills, build projects, and develop your career.
+            </p>
+
+        </div>
+
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+
+        <!-- Training -->
+        <div class="footer-section">
+
+            <h3>Training Areas</h3>
+
+            <ul>
+                <li>Web Development</li>
+                <li>App Development</li>
+                <li>Business Management</li>
+                <li>Leadership Skills</li>
+                <li>IT Support</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Contact -->
+        <div class="footer-section">
+
+            <h3>Contact Us</h3>
+
+            <p>Email: info@error404.com</p>
+
+            <p>Phone: +962 7 9000 0000</p>
+
+            <p>Amman, Jordan</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Error 404. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+</html>
